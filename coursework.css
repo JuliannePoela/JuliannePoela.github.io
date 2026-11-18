@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf8f2;
+    color: #951a2a;
+}
+
+/* Navigation */
+.navigation {
+    background-color: #ffd4e5;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 28px;
+}
+
+.menu a {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #951a2a;
+    text-decoration: none;
+}
+
+.siteName {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    letter-spacing: -3.5px;
+    color: #951a2a;
+}
+
+/* Introduction */
+.courseworkIntro {
+    background-color: #fdf8f2;
+    padding: 60px 30px 55px;
+    text-align: center;
+}
+
+.courseworkText {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.courseworkIntro h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    font-weight: normal;
+    color: #951a2a;
+    margin-bottom: 18px;
+}
+
+.courseworkIntro p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    color: #951a2a;
+}
+
+.courseworkContent {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+/* Code banner */
+.redBanner {
+    background-color: #951a2a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 16px 20px;
+}
+
+.codeBanner {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* HTML activities */
+.htmlSection {
+    background-color: #d02b2f;
+    color: #ffffff;
+    padding: 60px 30px 75px;
+    text-align: center;
+}
+
+.htmlSection h2 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 38px;
+}
+
+.htmlCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.htmlCard {
+    border-radius: 20px;
+    padding: 16px 16px 24px;
+    width: 31%;
+    text-align: center;
+}
+
+.sideActivity {
+    background-color: #fdf8f2;
+    color: #951a2a;
+}
+
+.middleActivity {
+    background-color: #951a2a;
+    color: #ffffff;
+    width: 35%;
+    padding: 18px 18px 28px;
+}
+
+.htmlImage {
+    background-color: #ffffff;
+    border-radius: 12px;
+    height: 195px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middleActivity .htmlImage {
+    height: 225px;
+}
+
+.htmlImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.htmlCard h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.htmlCard p {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+/* CSS activities */
+.cssSection {
+    background-color: #ffd4e5;
+    color: #951a2a;
+    padding: 65px 30px 75px;
+    text-align: center;
+}
+
+.cssSection h2 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    font-weight: normal;
+    color: #951a2a;
+    margin-bottom: 12px;
+}
+
+.cssDescription {
+    max-width: 680px;
+    margin: 0 auto 38px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #951a2a;
+}
+
+.cssExamples {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.cssCard {
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(149, 26, 42, 0.08);
+}
+
+.cssCard img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+/* JavaScript activity */
+.javascriptSection {
+    background-color: #951a2a;
+    color: #ffffff;
+    padding: 65px 35px;
+}
+
+.javascriptContent {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.javascriptImage {
+    width: 55%;
+}
+
+.javascriptCard {
+    background-color: #fdf8f2;
+    border-radius: 20px;
+    padding: 12px;
+    overflow: hidden;
+}
+
+.javascriptCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    display: block;
+}
+
+.javascriptText {
+    width: 45%;
+    text-align: left;
+}
+
+.javascriptText h2 {
+    font-family: Georgia, serif;
+    font-size: 44px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.javascriptText p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Smaller screens */
+@media (max-width: 750px) {
+    .navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .courseworkIntro h1 {
+        font-size: 40px;
+    }
+
+    .htmlCards {
+        flex-direction: column;
+    }
+
+    .htmlCard,
+    .middleActivity {
+        width: 100%;
+    }
+
+    .cssExamples {
+        grid-template-columns: 1fr;
+    }
+
+    .javascriptContent {
+        flex-direction: column;
+    }
+
+    .javascriptImage,
+    .javascriptText {
+        width: 100%;
+    }
+
+    .javascriptText {
+        text-align: center;
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+    .cssCard img {
+        height: 430px;
+    }
+}

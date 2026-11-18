@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poepoe | Contacts</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="contacts.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navigation">
+        <nav class="menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT ME</a>
+            <a href="projects.html">PROJECTS</a>
+        </nav>
+
+        <div class="siteName">poepoe</div>
+
+        <nav class="menu">
+            <a href="coursework.html">COURSEWORK</a>
+            <a href="contacts.html">CONTACTS</a>
+        </nav>
+    </header>
+
+    <section class="contactIntro">
+        <div class="contactContent">
+            <h1>Keep In Touch!</h1>
+
+            <p class="contactDescription">
+                Have a question, an idea, or just want to say hi?<br>
+                I'd love to hear from you!
+            </p>
+
+            <div class="contactCards">
+                <div class="contactCard">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09310962162</span>
+                </div>
+
+                <div class="contactCard">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>juliannepoela@gmail.com</span>
+                </div>
+
+                <div class="contactCard locationCard">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Pasig City, Philippines</span>
+                </div>
+
+                <div class="contactCard instagramCard">
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <div class="instagramLinks">
+                        <a href="https://www.instagram.com/klt.zt?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==" target="_blank">@klt.zt</a>
+                        <span>/</span>
+                        <a href="https://www.instagram.com/poetat0_?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank">@poetat0_</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="messageSection">
+        <div class="messageBox">
+            <form id="contactForm">
+                <div class="formRow">
+                    <input type="email" name="email" id="email" placeholder="Enter your email. *" required>
+                </div>
+
+                <div class="formRow nameFields">
+                    <input type="text" name="first_name" id="firstName" placeholder="First Name *" required>
+                    <input type="text" name="last_name" id="lastName" placeholder="Last Name *" required>
+                </div>
+
+                <div class="formRow">
+                    <textarea name="purpose" id="message" rows="5" placeholder="Purpose / Reason *" required></textarea>
+                </div>
+
+                <div class="formButtons">
+                    <button type="button" class="formButton sendButton" id="sendButton">Send Message</button>
+                    <button type="reset" class="formButton clearButton" id="clearButton">Clear</button>
+                </div>
+
+                <p class="messageStatus" id="messageStatus" style="display: none;"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footerName">poepoe</div>
+    </footer>
+
+</body>
+</html>

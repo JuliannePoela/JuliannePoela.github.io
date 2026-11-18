@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf8f2;
+    color: #951a2a;
+}
+
+/* Navigation */
+.navigation {
+    background-color: #ffd4e5;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 28px;
+}
+
+.menu a {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #951a2a;
+    text-decoration: none;
+}
+
+.siteName {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    letter-spacing: -3.5px;
+    color: #951a2a;
+}
+
+/* Projects introduction */
+.projectsIntro {
+    background-color: #d02b2f;
+    padding: 28px 24px 0;
+}
+
+.projectCover {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 360px;
+    background-color: #951a2a;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projectCover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.projectCover h1 {
+    position: relative;
+    font-family: Georgia, serif;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+/* Brand logos */
+.brandLogos {
+    background-color: #d02b2f;
+    color: #ffffff;
+    padding: 55px 30px 75px;
+    text-align: center;
+}
+
+.brandLogos h2 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.brandLogos .sectionDescription {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 36px;
+}
+
+.gallery {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.arrowButton {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffd4e5;
+    color: #d02b2f;
+    font-size: 14px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.logoGroup {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.logoCard {
+    background-color: #ffffff;
+    border-radius: 18px;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Illustrations */
+.illustrations {
+    background-color: #ffd4e5;
+    color: #951a2a;
+    padding: 65px 35px 80px;
+    text-align: center;
+}
+
+.illustrations h2 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.illustrations .sectionDescription {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #951a2a;
+    margin-bottom: 38px;
+}
+
+.drawingGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.moreDrawings {
+    margin-top: 20px;
+}
+
+.drawingCard {
+    background-color: #951a2a;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+}
+
+.drawingCard img {
+    width: 100%;
+    height: 240px;
+    max-width: 100%;
+    border-radius: 12px;
+    display: block;
+    object-fit: contain;
+}
+
+.showButton {
+    background-color: #951a2a;
+    color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 24px;
+    margin-top: 28px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.showButton i {
+    margin-left: 8px;
+}
+
+/* 3D models */
+.models {
+    background-color: #fdf8f2;
+    padding: 70px 40px 90px;
+}
+
+.modelIntro {
+    max-width: 960px;
+    margin: 0 auto 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.modelIntro h2 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+    font-weight: normal;
+    color: #951a2a;
+}
+
+.modelIntro p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #951a2a;
+    text-align: right;
+}
+
+.modelCards {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.modelCard {
+    border-radius: 18px;
+    padding: 16px 16px 26px;
+    color: #ffffff;
+    text-align: center;
+    width: 31%;
+}
+
+.sideModel {
+    background-color: #d02b2f;
+}
+
+.middleModel {
+    background-color: #951a2a;
+    padding: 20px 20px 34px;
+    width: 34%;
+}
+
+.modelCard img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.middleModel img {
+    height: 235px;
+}
+
+.modelCard h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.middleModel h3 {
+    font-size: 23px;
+}
+
+.modelCard p {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+/* Smaller screens */
+@media (max-width: 750px) {
+    .navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .projectCover {
+        height: 240px;
+    }
+
+    .projectCover h1 {
+        font-size: 32px;
+    }
+
+    .logoGroup {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .drawingGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .drawingCard img {
+        height: 200px;
+    }
+
+    .modelIntro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modelIntro p {
+        text-align: center;
+    }
+
+    .modelCards {
+        flex-direction: column;
+    }
+
+    .modelCard,
+    .middleModel {
+        width: 100%;
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+    .projectCover {
+        height: 430px;
+    }
+
+    .projectCover h1 {
+        font-size: 62px;
+    }
+
+    .modelIntro,
+    .modelCards {
+        max-width: 1060px;
+    }
+
+    .modelCard img {
+        height: 230px;
+    }
+
+    .middleModel img {
+        height: 275px;
+    }
+}

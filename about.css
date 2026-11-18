@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf8f2;
+    color: #951a2a;
+}
+
+/* Navigation */
+.navigation {
+    background-color: #ffd4e5;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 28px;
+}
+
+.menu a {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #951a2a;
+    text-decoration: none;
+}
+
+.siteName {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    letter-spacing: -3.5px;
+    color: #951a2a;
+}
+
+/* About introduction */
+.aboutIntro {
+    background-color: #fdf8f2;
+    padding: 65px 40px 75px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutContent {
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.aboutIntro h1 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #951a2a;
+    margin-bottom: 24px;
+}
+
+.biography {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #951a2a;
+}
+
+/* Hearts */
+.heart {
+    position: absolute;
+}
+
+.heart1 {
+    top: 45px;
+    left: 7%;
+    font-size: 35px;
+    color: #ffd4e5;
+}
+
+.heart2 {
+    top: 135px;
+    left: 16%;
+    font-size: 18px;
+    color: #d02b2f;
+}
+
+.heart3 {
+    top: 195px;
+    left: 6%;
+    font-size: 15px;
+    color: #ffd4e5;
+}
+
+.heart4 {
+    bottom: 35px;
+    left: 9%;
+    font-size: 30px;
+    color: #951a2a;
+}
+
+.heart5 {
+    top: 32px;
+    right: 17%;
+    font-size: 30px;
+    color: #d02b2f;
+}
+
+.heart6 {
+    top: 90px;
+    right: 5%;
+    font-size: 15px;
+    color: #951a2a;
+}
+
+.heart7 {
+    bottom: 45px;
+    right: 6%;
+    font-size: 33px;
+    color: #d02b2f;
+}
+
+.heart8 {
+    top: 200px;
+    right: 16%;
+    font-size: 15px;
+    color: #ffd4e5;
+}
+
+/* Wide photo */
+.widePhoto img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center 42%;
+    display: block;
+}
+
+/* Skills banner */
+.redBanner {
+    background-color: #951a2a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 16px 20px;
+}
+
+/* Portrait and skills */
+.skillsSection {
+    display: flex;
+    width: 100%;
+}
+
+.portrait {
+    width: 50%;
+}
+
+.portrait img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.skillsArea {
+    width: 50%;
+    background: repeating-linear-gradient(
+        to right,
+        #ffd4e5,
+        #ffd4e5 22px,
+        #ffe6f0 22px,
+        #ffe6f0 44px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.skillsBox {
+    background-color: #fdf8f2;
+    border: 2px solid #951a2a;
+    border-radius: 16px;
+    padding: 36px 34px;
+    max-width: 340px;
+    width: 100%;
+}
+
+.skillsBox h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #951a2a;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.skillsBox ul {
+    padding-left: 20px;
+    color: #951a2a;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* Future goals */
+.futureGoals {
+    background-color: #d02b2f;
+    color: #ffffff;
+    padding: 70px 40px;
+}
+
+.quoteContent {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.futureGoals h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-bottom: 26px;
+}
+
+.futureGoals p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+}
+
+.quoteAuthor {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* Smaller screens */
+@media (max-width: 750px) {
+    .navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skillsSection {
+        flex-direction: column;
+    }
+
+    .portrait,
+    .skillsArea {
+        width: 100%;
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+    .aboutIntro h1 {
+        font-size: 64px;
+    }
+
+    .biography {
+        font-size: 16px;
+    }
+
+    .widePhoto img {
+        height: 460px;
+    }
+
+    .portrait img {
+        height: 560px;
+    }
+
+    .skillsBox {
+        max-width: 420px;
+        padding: 45px 40px;
+    }
+
+    .skillsBox h2 {
+        font-size: 28px;
+    }
+
+    .skillsBox ul {
+        font-size: 16px;
+    }
+
+    .futureGoals h2 {
+        font-size: 46px;
+    }
+
+    .futureGoals p {
+        font-size: 16px;
+    }
+}
